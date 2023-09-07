@@ -1,0 +1,9 @@
+.paragraph {
+    color: red;
+}
+
+@media screen (min-width: 600px) {
+    .paragraph {
+        color: green;
+    }
+}
