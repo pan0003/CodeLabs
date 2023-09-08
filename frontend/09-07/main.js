@@ -60,3 +60,12 @@ function functionFactory(param = 5) {
 }
 // Create an instance of the inner function by invoking functionFactory with a parameter
 functionFactory();
+
+// Exercise 6
+function hoistingTest() {
+   console.log(exercise6 = 8); // Try printing a variable here
+
+   let exercise6; // Declare the variable after the console.log
+}
+
+hoistingTest(); // Looks like variables defined with let and const are hoisted to the top but are not initialized
