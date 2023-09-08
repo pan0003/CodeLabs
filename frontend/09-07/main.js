@@ -69,3 +69,14 @@ function hoistingTest() {
 }
 
 hoistingTest(); // Looks like variables defined with let and const are hoisted to the top but are not initialized
+
+// Exercise 7
+function setupCounter() {
+   let count = 0; // Define a count variable here
+
+    return function() {
+        // Increment and print the count
+    }
+}
+
+// Create a counter instance and invoke it to test
