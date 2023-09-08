@@ -36,3 +36,17 @@ function outerE3() {
 }
 
 outerE3(); // Prints: myVariable inside inner function: Outside
+
+//Exercise 4 
+let global; // Declare a global variable here
+
+function modifyGlobal() {
+   global = 5; // Try to modify the global variable here
+}
+
+function localScopeTest() {
+    global = 6; // Declare a local variable with the same name as the global variable
+}
+
+modifyGlobal(); 
+localScopeTest(); // Call both functions here
