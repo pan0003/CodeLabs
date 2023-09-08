@@ -13,3 +13,13 @@ function outerFunction() {
 }
 
 outerFunction();
+
+// Exercise 2
+function mainFunction() {
+	function hoistedFunction(); // Call the hoistedFunction here
+	// Now, declare the hoistedFunction below
+}
+
+mainFunction();
+hoistedFunction(); // I observe that when I declare this function, VS Code tells me that I can't find this function, so my guess is that I have to declare a function before I can use it
+
