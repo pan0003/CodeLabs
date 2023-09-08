@@ -50,3 +50,13 @@ function localScopeTest() {
 
 modifyGlobal(); 
 localScopeTest(); // Call both functions here
+
+// Exercise 5
+function functionFactory(param = 5) {
+    function innerFunctionFactory() {
+        console.log('I am using', param);
+    } // Return a function that makes use of 'param'
+    
+}
+// Create an instance of the inner function by invoking functionFactory with a parameter
+functionFactory();
