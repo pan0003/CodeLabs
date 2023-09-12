@@ -20,7 +20,7 @@ const User = () => {
   const user = new User();
   console.log(user);
 
-  // Exercise 2, 3, 4,
+  // Exercise 2, 3, 4, 5
   class PersonE2 {
     constructor(name, age) {
         this._name = name;
