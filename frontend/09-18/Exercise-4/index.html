@@ -1,0 +1,32 @@
+<!-- Exercise 4
+Create a new button element with the text "Click Me".
+Append this button to the end of the body.
+Add an event listener to the button so that when it's clicked, it alerts the user with the message "Button was clicked!". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Existing content -->
+
+    <!-- Create a button element with the text "Click Me" -->
+    <button id="clickMeButton">Click Me</button>
+
+    <script>
+        // Get a reference to the button element
+        const button = document.getElementById("clickMeButton");
+
+        // Add an event listener to the button
+        button.addEventListener("click", function () {
+            // Display an alert when the button is clicked
+            alert("Button was clicked!");
+        });
+    </script>
+</body>
+</html>
+
+<!-- In this code, we create a button element with the text "Click Me," append it to the end of the body, and then use JavaScript to add an event listener to the button. When the button is clicked, it triggers the event listener, which displays an alert with the message "Button was clicked!" to the user. -->

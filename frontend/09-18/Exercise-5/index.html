@@ -1,0 +1,35 @@
+<!-- Exercise 5
+In this code, we use the addEventListener method to listen for the "input" event on the input element. When the user types or makes any changes to the input, the event listener is triggered, and it updates the content of the paragraph (<p>) with the current value of the input. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event Listener</title>
+</head>
+<body>
+    <!-- Input element -->
+    <input type="text" id="textInput" />
+
+    <!-- Paragraph to display current input content -->
+    <p id="textDisplay"></p>
+
+    <script>
+        // Get references to the input and paragraph elements
+        const inputElement = document.getElementById("textInput");
+        const textDisplay = document.getElementById("textDisplay");
+
+        // Add an event listener to the input element
+        inputElement.addEventListener("input", function () {
+            // Get the current value of the input
+            const inputValue = inputElement.value;
+
+            // Update the content of the paragraph with the current input value
+            textDisplay.textContent = inputValue;
+        });
+    </script>
+</body>
+</html>
+
+<!-- In this code, we use the addEventListener method to listen for the "input" event on the input element. When the user types or makes any changes to the input, the event listener is triggered, and it updates the content of the paragraph (<p>) with the current value of the input. -->
